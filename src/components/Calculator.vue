@@ -113,7 +113,7 @@ export default {
       bmi.value = (weight.value / height.value ** 2) * 10000;
       if (bmi.value <= 16) {
         bmiText.value = "Выраженный дефицит массы тела";
-      } else if (bmi.value < 18,5) {
+      } else if (bmi.value < 18.5) {
         bmiText.value = "Недостаточная (дефицит) масса тела";
       } else if (bmi.value < 25) {
         bmiText.value = "Норма";
