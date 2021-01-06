@@ -14,7 +14,7 @@
             <ion-label color="primary">{{ bmiText }}</ion-label>
           </p>
         </div>
-        <form @change="onFormChange()">
+        <form @ionChange="onFormChange()">
           <ion-item>
             <ion-label position="floating">Рост в см</ion-label>
             <!-- Number type input -->
