@@ -20,6 +20,8 @@
             <!-- Number type input -->
             <ion-input
               type="number"
+              required
+              min="0"
               :value="height"
               @input="height = $event.target.value"
             ></ion-input>
@@ -30,6 +32,8 @@
             <!-- Number type input -->
             <ion-input
               type="number"
+              required
+              min="0"
               :value="weight"
               @input="weight = $event.target.value"
             ></ion-input>
@@ -106,9 +110,9 @@ import { ref } from "vue";
 export default {
   name: "Calculator",
   setup() {
-    const height = ref(0);
-    const weight = ref(0);
-    const bmi = ref(0);
+    const height = ref();
+    const weight = ref();
+    const bmi = ref();
     const bmiText = ref("");
 
     function onFormChange() {
