@@ -9,7 +9,7 @@
       <ion-card-content>
         <div class="bmi-result" v-if="bmi">
           <ion-label><strong>Ваш индекс массы тела: </strong></ion-label>
-          <ion-label color="primary">{{ bmi }} кг/м²</ion-label>
+          <ion-label color="primary"><strong>{{ bmi }} кг/м²</strong></ion-label>
           <p>
             <ion-label color="primary">{{ bmiText }}</ion-label>
           </p>
@@ -55,23 +55,23 @@
           <ion-col> Выраженный дефицит массы тела </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col> 16-18,5 </ion-col>
+          <ion-col> 16 — 18,5 </ion-col>
           <ion-col> Недостаточная (дефицит) масса тела </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col> 18,5-25 </ion-col>
+          <ion-col> 18,5 — 25 </ion-col>
           <ion-col> Норма </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col> 25-30</ion-col>
+          <ion-col> 25 — 30</ion-col>
           <ion-col> Избыточная масса тела (предожирение) </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col> 30-35 </ion-col>
+          <ion-col> 30 — 35 </ion-col>
           <ion-col> Ожирение </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col> 35-40 </ion-col>
+          <ion-col> 35 — 40 </ion-col>
           <ion-col> Ожирение резкое </ion-col>
         </ion-row>
         <ion-row>
@@ -94,7 +94,7 @@
     </div>
     <div class="bmi-formula">
       <p>
-        ИМТ рассчитывается по формуле: <strong>I = m \ h²</strong>,<br />
+        ИМТ рассчитывается по формуле: <strong>I = m / h²</strong>,<br />
         где:<br />
         <b>m</b> — масса тела в килограммах<br />
         <b>h</b> — рост в метрах, и измеряется в кг/м².
@@ -154,6 +154,7 @@ a {
 }
 .bmi-result {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 </style>
