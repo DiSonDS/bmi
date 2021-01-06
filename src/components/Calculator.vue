@@ -7,6 +7,13 @@
       </ion-card-header>
 
       <ion-card-content>
+        <div class="bmi-result">
+          <ion-label><strong>Ваш индекс массы тела: </strong></ion-label>
+          <ion-label color="primary">{{ bmi }} кг/м²</ion-label>
+          <p>
+            <ion-label color="primary">{{ bmiText }}</ion-label>
+          </p>
+        </div>
         <form @change="onFormChange()">
           <ion-item>
             <ion-label position="floating">Рост в см</ion-label>
@@ -28,11 +35,6 @@
             ></ion-input>
           </ion-item>
         </form>
-        <div class="bmi-result">
-          <ion-label><strong>Ваш индекс массы тела: </strong></ion-label>
-          <ion-label color="primary">{{ bmi }} кг/м²</ion-label>
-          <p><ion-label color="primary">{{ bmiText }}</ion-label></p>
-        </div>
       </ion-card-content>
     </ion-card>
 
@@ -107,7 +109,7 @@ export default {
     const height = ref(0);
     const weight = ref(0);
     const bmi = ref(0);
-    const bmiText = ref('');
+    const bmiText = ref("");
 
     function onFormChange() {
       bmi.value = (weight.value / height.value ** 2) * 10000;
@@ -126,7 +128,7 @@ export default {
       } else if (bmi.value >= 40) {
         bmiText.value = "Очень резкое ожирение";
       } else {
-        bmiText.value = ""
+        bmiText.value = "";
       }
     }
     return { height, weight, bmi, bmiText, onFormChange };
