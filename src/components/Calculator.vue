@@ -7,7 +7,7 @@
       </ion-card-header>
 
       <ion-card-content>
-        <div class="bmi-result">
+        <div class="bmi-result" v-if="bmi">
           <ion-label><strong>Ваш индекс массы тела: </strong></ion-label>
           <ion-label color="primary">{{ bmi }} кг/м²</ion-label>
           <p>
