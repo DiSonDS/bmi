@@ -2,7 +2,6 @@
   <BaseContainer>
     <ion-card>
       <ion-card-header>
-        <ion-card-subtitle>Калькулятор</ion-card-subtitle>
         <ion-card-title>Рассчитать Индекс Массы Тела 🔢</ion-card-title>
       </ion-card-header>
 
