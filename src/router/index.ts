@@ -5,18 +5,10 @@ import Tabs from '../views/Tabs.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/calc'
-  },
-  {
-    path: '/',
     component: Tabs,
     children: [
       {
         path: '',
-        redirect: 'calc'
-      },
-      {
-        path: 'calc',
         name: 'Calculator',
         component: () => import('@/views/CalculatorView.vue')
       },
