@@ -12,8 +12,7 @@
         >исходный код</a
       >
     </div>
-    <ion-item-divider />
-    <div class="developer-link ion-text-center ion-margin-top">
+    <div class="developer-link ion-margin-top">
       👨‍💻 Разработчик:
       <a href="https://disonds.com" target="_blank" rel="author noopener"
         >DiSonDS</a
@@ -23,13 +22,11 @@
 </template>
 
 <script lang="ts">
-import { IonItemDivider } from "@ionic/vue";
 import BaseContainer from "@/components/base/BaseContainer.vue";
 
 export default {
   name: "About",
   components: {
-    IonItemDivider,
     BaseContainer
   },
 };
