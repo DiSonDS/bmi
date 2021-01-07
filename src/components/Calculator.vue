@@ -6,7 +6,7 @@
       </ion-card-header>
 
       <ion-card-content>
-        <div class="bmi-result" v-if="bmi">
+        <div class="bmi-result ion-text-center ion-margin-top ion-margin-bottom" v-if="bmi">
           <ion-label><strong>Ваш индекс массы тела: </strong></ion-label>
           <ion-label color="primary"
             ><strong>{{ bmi }} кг/м²</strong></ion-label
@@ -43,7 +43,7 @@
       </ion-card-content>
     </ion-card>
 
-    <div class="bmi-table">
+    <div class="bmi-table ion-margin-top">
       <ion-grid>
         <ion-row>
           <ion-col> <b>Индекс массы тела</b> </ion-col>
@@ -81,7 +81,7 @@
         </ion-row>
       </ion-grid>
     </div>
-    <div class="bmi-info">
+    <div class="bmi-info ion-margin-top">
       <a
         href="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B5%D0%BA%D1%81_%D0%BC%D0%B0%D1%81%D1%81%D1%8B_%D1%82%D0%B5%D0%BB%D0%B0"
         target="_blank"
@@ -93,13 +93,11 @@
       нормальной или избыточной. Важен при определении показаний для
       необходимости лечения.
     </div>
-    <div class="bmi-formula">
-      <p>
-        ИМТ рассчитывается по формуле: <strong>I = m / h²</strong>,<br />
-        где:<br />
-        <b>m</b> — масса тела в килограммах<br />
-        <b>h</b> — рост в метрах, и измеряется в кг/м².
-      </p>
+    <div class="bmi-formula ion-margin-top">
+      ИМТ рассчитывается по формуле: <strong>I = m / h²</strong>,<br />
+      где:<br />
+      <b>m</b> — масса тела в килограммах<br />
+      <b>h</b> — рост в метрах, и измеряется в кг/м².
     </div>
   </BaseContainer>
 </template>
@@ -115,7 +113,7 @@ import {
   IonInput,
   IonGrid,
   IonRow,
-  IonCol
+  IonCol,
 } from "@ionic/vue";
 import BaseContainer from "@/components/base/BaseContainer.vue";
 import { ref } from "vue";
@@ -169,15 +167,5 @@ export default {
 <style scoped>
 a {
   text-decoration: none;
-}
-.bmi-table,
-.bmi-info,
-.bmi-formula {
-  margin-top: 1.5rem;
-}
-.bmi-result {
-  text-align: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 </style>

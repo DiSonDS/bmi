@@ -11,7 +11,6 @@
           <ion-title size="large">Калькулятор ИМТ</ion-title>
         </ion-toolbar>
       </ion-header>
-
       <Calculator />
     </ion-content>
   </ion-page>

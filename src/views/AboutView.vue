@@ -11,7 +11,6 @@
           <ion-title size="large">О нас</ion-title>
         </ion-toolbar>
       </ion-header>
-
       <About />
     </ion-content>
   </ion-page>
