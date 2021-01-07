@@ -2,7 +2,8 @@
   <BaseContainer>
     <h1>Что Где Когда 📝</h1>
     <div class="about-text">
-      Как-то вечером захотелось попробовать <a href="https://ionicframework.com/">Ionic Framework</a>, собственно
+      Как-то вечером захотелось попробовать
+      <a href="https://ionicframework.com/">Ionic Framework</a>, собственно
       результат Вы сейчас сами и наблюдаете
     </div>
     <div class="github-link">
@@ -22,12 +23,14 @@
 </template>
 
 <script lang="ts">
+import { IonItemDivider } from "@ionic/vue";
 import BaseContainer from "@/components/base/BaseContainer.vue";
 
 export default {
   name: "About",
   components: {
-    BaseContainer,
+    IonItemDivider,
+    BaseContainer
   },
 };
 </script>

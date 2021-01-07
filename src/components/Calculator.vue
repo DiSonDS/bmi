@@ -8,7 +8,9 @@
       <ion-card-content>
         <div class="bmi-result" v-if="bmi">
           <ion-label><strong>Ваш индекс массы тела: </strong></ion-label>
-          <ion-label color="primary"><strong>{{ bmi }} кг/м²</strong></ion-label>
+          <ion-label color="primary"
+            ><strong>{{ bmi }} кг/м²</strong></ion-label
+          >
           <p>
             <ion-label color="primary">{{ bmiText }}</ion-label>
           </p>
@@ -103,6 +105,18 @@
 </template>
 
 <script lang="ts">
+import {
+  IonCard,
+  IonCardHeader,
+  IonCardTitle,
+  IonCardContent,
+  IonLabel,
+  IonItem,
+  IonInput,
+  IonGrid,
+  IonRow,
+  IonCol
+} from "@ionic/vue";
 import BaseContainer from "@/components/base/BaseContainer.vue";
 import { ref } from "vue";
 
@@ -137,7 +151,17 @@ export default {
     return { height, weight, bmi, bmiText, onFormChange };
   },
   components: {
-    BaseContainer,
+    IonCard,
+    IonCardHeader,
+    IonCardTitle,
+    IonCardContent,
+    IonLabel,
+    IonItem,
+    IonInput,
+    IonGrid,
+    IonRow,
+    IonCol,
+    BaseContainer
   },
 };
 </script>
