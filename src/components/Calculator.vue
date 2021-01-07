@@ -15,6 +15,9 @@
             <ion-label color="primary">{{ bmiText }}</ion-label>
           </p>
         </div>
+        <div v-else>
+          Введите ниже свои данные
+        </div>
         <form @ionChange="onFormChange()">
           <ion-item>
             <ion-label position="floating">Рост в см</ion-label>
@@ -113,7 +116,7 @@ import {
   IonInput,
   IonGrid,
   IonRow,
-  IonCol,
+  IonCol
 } from "@ionic/vue";
 import BaseContainer from "@/components/base/BaseContainer.vue";
 import { ref } from "vue";
@@ -127,6 +130,10 @@ export default {
     const bmiText = ref("");
 
     function onFormChange() {
+      if (weight.value <=0 || height.value <= 0){
+        bmi.value = 0
+        return
+      }
       bmi.value = (weight.value / height.value ** 2) * 10000;
       if (bmi.value <= 16) {
         bmiText.value = "Выраженный дефицит массы тела";
