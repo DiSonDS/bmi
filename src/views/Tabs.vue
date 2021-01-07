@@ -2,7 +2,7 @@
   <ion-page>
     <ion-tabs>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="CalculatorView" href="/">
+        <ion-tab-button tab="CalculatorView" href="/calc">
           <ion-icon :icon="calculator" />
           <ion-label>Калькулятор</ion-label>
         </ion-tab-button>
