@@ -1,9 +1,10 @@
 <template>
   <BaseContainer>
     <h1>Что Где Когда 📝</h1>
-    <div class="about-text">
-      Как-то вечером захотелось попробовать <a href="https://ionicframework.com/">Ionic Framework</a>, собственно
-      результат вы сейчас сами и наблюдаете
+    <div class="about-text ion-margin-top ion-margin-bottom">
+      Как-то вечером захотелось попробовать
+      <a href="https://ionicframework.com/">Ionic Framework</a>, собственно
+      результат Вы сейчас сами и наблюдаете
     </div>
     <div class="github-link">
       🔨 GitHub:
@@ -11,8 +12,7 @@
         >исходный код</a
       >
     </div>
-    <ion-item-divider />
-    <div class="developer-link">
+    <div class="developer-link ion-margin-top">
       👨‍💻 Разработчик:
       <a href="https://disonds.com" target="_blank" rel="author noopener"
         >DiSonDS</a
@@ -27,7 +27,7 @@ import BaseContainer from "@/components/base/BaseContainer.vue";
 export default {
   name: "About",
   components: {
-    BaseContainer,
+    BaseContainer
   },
 };
 </script>
@@ -35,12 +35,5 @@ export default {
 <style scoped>
 a {
   text-decoration: none;
-}
-.about-text {
-  margin-bottom: 0.5rem;
-}
-.developer-link {
-  margin-top: 1rem;
-  text-align: center;
 }
 </style>

@@ -8,10 +8,9 @@
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Калькулятор</ion-title>
+          <ion-title size="large">Калькулятор ИМТ</ion-title>
         </ion-toolbar>
       </ion-header>
-
       <Calculator />
     </ion-content>
   </ion-page>

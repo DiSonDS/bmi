@@ -1,30 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>Калькулятор Индекса Массы Тела</title>
 
-    <base href="/" />
+<head>
+  <meta charset="utf-8" />
+  <title>Калькулятор Индекса Массы Тела</title>
+  <meta name="description"
+    content="Сайт-калькулятор для рассчитывания Индекса Массы Тела. Узнайте свой ИМТ, cоответствие между массой человека и его ростом">
+  <meta name="keywords" content="калькулятор имт, рассчитать индекс массы тела, узнать индекс массы тела">
 
-    <meta name="color-scheme" content="light dark" />
-    <meta
-      name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
+  <base href="/" />
 
-    <link rel="shortcut icon" type="image/png" href="<%= BASE_URL %>assets/icon/favicon.png" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="viewport"
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
 
-    <!-- add to homescreen for ios -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Ionic App" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  </head>
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>img/icons/favicon-16x16.png">
+  <link rel="manifest" href="<%= BASE_URL %>manifest.json">
+  <link rel="mask-icon" href="<%= BASE_URL %>img/icons/safari-pinned-tab.svg" color="#b72221">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#3880ff">
 
-  <body>
-    <div id="app"></div>
-  </body>
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Калькулятор ИМТ" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92649835-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-92649835-1');
+  </script>
+  <!-- /Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function () {
+        try {
+          w.yaCounter43058144 = new Ya.Metrika2({
+            id: 43058144,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+          });
+        } catch (e) {
+        }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () {
+          n.parentNode.insertBefore(s, n);
+        };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else {
+        f();
+      }
+    })(document, window, "yandex_metrika_callbacks2");
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/43058144" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+</body>
 
 </html>
-
